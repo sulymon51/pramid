@@ -1,4 +1,4 @@
-# flutter_loginSignup-phpMyAdmin
+# Pyramid 
 
 Flutter login and Signup example using phpMyAdmin.
 
@@ -15,11 +15,11 @@ Flutter login and Signup example using phpMyAdmin.
 
 <img src="screenshots/s1.jpg" height="300em" /> <img src="screenshots/s2.jpg" height="300em" /> <img src="screenshots/s3.jpg" height="300em" /> <img src="screenshots/s4.jpg" height="300em" /> <img src="screenshots/s5.jpg" height="300em" /> <img src="screenshots/s6.jpg" height="300em" /> <img src="screenshots/s7.jpg" height="300em" /> 
 
-## Installation note:
+## Installation note: 
 Just paste the code in your PC and paste the API in your desire folder and finally import the DATABASE. 
 Then run command flutter run , the project will run perfectly
 
 ### Created & Maintained By
 
-[Bhuwan Ojha](https://github.com/bhu1oja)  ([Youtube](https://www.youtube.com/channel/UCa-XTJKKDSVkCaoZAUx3g4g))
+[sulymon 51](https://github.com/sulymon51)  ([Youtube](https://www.youtube.com/channel/UCa-XTJKKDSVkCaoZAUx3g4g))
 ([Facebook community](https://www.facebook.com/groups/380421285857980/?source_id=377578722996429))
