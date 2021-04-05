@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 class MyRegister extends StatefulWidget {
   @override
@@ -126,12 +126,12 @@ body: {
 }
 
 myToast(String toast){
-return Fluttertoast.showToast(
-        msg: toast,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIos: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white
-    );
+// return Fluttertoast.showToast(
+//         msg: toast,
+//         toastLength: Toast.LENGTH_SHORT,
+//         gravity: ToastGravity.CENTER,
+//         timeInSecForIos: 1,
+//         backgroundColor: Colors.red,
+//         textColor: Colors.white
+//     );
 }

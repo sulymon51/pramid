@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "570339443173",
+    "firebase_url": "https://ridezmyway-1529445546951.firebaseio.com",
+    "project_id": "ridezmyway-1529445546951",
+    "storage_bucket": "ridezmyway-1529445546951.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570339443173:android:584e0b7fbdf845762daf0c",
+        "android_client_info": {
+          "package_name": "com.appz.pyramidcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570339443173-2mt3k0dvhdduhkboa7gnr8j6gsq76cmn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appz.pyramidcare",
+            "certificate_hash": "4b4affbdd3a64bae1ba13f59f9670b0386bc64e4"
+          }
+        },
+        {
+          "client_id": "570339443173-emk54qa4li5c9bv8ubkekbsbeen678s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY5BFDfRWm-UbsDBVwtMEQ7RYsevS-neU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570339443173-emk54qa4li5c9bv8ubkekbsbeen678s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

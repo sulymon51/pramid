@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 class MyLogin extends StatefulWidget {
   @override
@@ -9,25 +9,25 @@ class MyLogin extends StatefulWidget {
 }
 
 class _MyLoginState extends State<MyLogin> {
-
-TextEditingController _controllerPassword = new TextEditingController();
+  bool hidePass = true;
+  TextEditingController _controllerPassword = new TextEditingController();
   TextEditingController _controllerEmail = new TextEditingController();
-  var url = "http://192.168.***.***/myAppFolder/login.php";
+  var url = "https://pyramidpharmacy.com/rxcare/api/login.php";
 
 void addData() async{
  var response = await http.post(url,
 body: {
-    "Email": _controllerEmail.text.trim(),
-    "Password": _controllerPassword.text.trim(),
+    "email": _controllerEmail.text.trim(),
+    "password": _controllerPassword.text.trim(),
    
   }
   ); 
   var jsonData = jsonDecode(response.body);
   var jsonString = jsonData['message'];
   if(jsonString=='success'){
-    myToast(jsonString);
+    // myToast(jsonString);
   }else{
-    myToast(jsonString);
+    // myToast(jsonString);
   }
 }
 
@@ -80,9 +80,12 @@ body: {
                 child: Icon(Icons.message, color: Colors.black),
               ),
               contentPadding: EdgeInsets.all(18),
+              suffixIcon: IconButton(icon: Icon(Icons.visibility), onPressed:(){
+                showandhide();
+              }),
               labelText: "Password"
           ),
-          obscureText:true,
+          obscureText:hidePass,
           ),
            ),
          RaisedButton(
@@ -96,16 +99,21 @@ body: {
       ),
     );
   }
+  showandhide() {
+    setState(() {
+      hidePass = !hidePass;
+    });
+}
 }
 
 
-myToast(String toast){
-return Fluttertoast.showToast(
-        msg: toast,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIos: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white
-    );
-}
+// myToast(String toast){
+// return Fluttertoast.showToast(
+//         msg: toast,
+//         toastLength: Toast.LENGTH_SHORT,
+//         gravity: ToastGravity.CENTER,
+//         timeInSecForIos: 1,
+//         backgroundColor: Colors.red,
+//         textColor: Colors.white
+//     );
+// }

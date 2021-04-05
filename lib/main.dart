@@ -1,23 +1,51 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:login_signup/login.dart';
-import 'package:login_signup/register.dart';
+import 'package:provider/provider.dart';
+import 'package:pyramid/screen/login/login_page.dart';
+import 'package:pyramid/login.dart';
+import 'package:pyramid/register.dart';
+import 'package:pyramid/src/global_bloc.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  GlobalBloc globalBloc;
+   void initState() {
+    globalBloc = GlobalBloc();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
+     return Provider<GlobalBloc>.value(
+      value: globalBloc,
+      child: MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.green,
+          brightness: Brightness.light,
+        ),
+        home: LoginPage(),
+        debugShowCheckedModeBanner: false,
       ),
-      home: MyHomePage(),
     );
-  }
-}
+  }}
+  
+  // {
+  //   return MaterialApp(
+  //      debugShowCheckedModeBanner: false,
+  //     title: 'Pyramid',
+  //     theme: ThemeData(
+  //       primarySwatch: Colors.green,
+  //     ),
+  //     home: LoginPage()
+  //     );
+  // }
+
 
 class MyHomePage extends StatefulWidget {
   @override
